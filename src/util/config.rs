@@ -9,6 +9,10 @@ type StringVec = Vec<String>;
 // Encapsulates configuration values to be used across the application
 // It ensures correct typing and that at least they will have a default value
 pub struct Config {
+
+    // Miner settings
+   
+
     // Networking settings
     pub port: u16,
 
@@ -16,11 +20,7 @@ pub struct Config {
     pub peers: StringVec,
     pub peer_sync_ms: u64,
 
-    // Miner settings
-    pub max_blocks: u64,
-    pub max_nonce: u64,
-    pub difficulty: u32,
-    pub tx_waiting_ms: u64,
+    
 }
 
 // The implementation reads the values from environment variables
